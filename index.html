@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>F.R.O.G's Inc.</title>
+</head>
+<body>  
+   <div class="scare">
+    <input type="button" onclick="jumpscare();" value="click me">
+    <img src="clown.jpg" id="jumpscare" alt="">
+  <audio src="Long Scream- Sound Effect.mp3" id="scream"></audio>
+</div>
+<script>
+function jumpscare() {
+    var jumpscare = document.getElementById("jumpscare");
+    var audio = document.getElementById("scream");
+    audio.play(); 
+    setTimeout(() => { 
+jumpscare.style.visibility="visible";
+}, 1000); 
+}
+
+
+
+
+
+
+</script> 
+</body>
+</html>
